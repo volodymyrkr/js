@@ -1,2 +1,1 @@
-# js
-JS tutorial for begginers
+# JS Tutorial
