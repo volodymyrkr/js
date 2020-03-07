@@ -1,9 +1,5 @@
-let products = [
-  {
-    name: "Beer",
-    number: "0,5L",
-    price: 17.90
-  },
+let goods = [
+  {name: "Beer", number: "0,5L", price: 17.90},
   {name: "Butter", number: "400g", price: 30.5},
   {name: "Sausages", number: "400g", price: 50.3},
   {name: "eggs ", number: "10 pieces", price: 20.55},
@@ -21,11 +17,11 @@ let products = [
 
 console.log("My buyings:");
 
-products.forEach((good) => {
+goods.forEach((good) => {
   console.log(`- ${good.name} ${good.number} costs ${good.price}`);
 });
 
-var totalCost = products.reduce((prev, good) => {
+var totalCost = goods.reduce((prev, good) => {
   return prev + good.price;
 }, 0);
 
