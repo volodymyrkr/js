@@ -19,8 +19,8 @@ persons.forEach((person) => {
     console.log("-",person.name, person.surname,currentYear - person.yearsOfBirth,);
 });
 
-var totalAmountOfYears = persons.reduce((prev, person) => {
-    return prev + currentYear - person.yearsOfBirth;
+var totalAmountOfYears = persons.reduce((sum, person) => {
+    return sum + currentYear - person.yearsOfBirth;
 }, 0);
 
 console.log("Total amount of years: ", totalAmountOfYears);
