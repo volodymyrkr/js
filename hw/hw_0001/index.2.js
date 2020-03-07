@@ -17,8 +17,8 @@ let products = [
 
 console.log("My buyings:");
 
-products.forEach((good) => {
-  console.log(`- ${good.name} ${good.number} costs ${good.price}`);
+products.forEach((product) => {
+  console.log(`- ${product.name} ${product.number} costs ${product.price}`);
 });
 
 var totalCost = products.reduce((prev, good) => {
