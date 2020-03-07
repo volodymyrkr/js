@@ -19,8 +19,8 @@ currencies.forEach((currency) => {
   console.log(`- ${currency.shortname} (${currency.name}) costs ${currency.cost} hrn `);
 });
 
-var totalCost = currencies.reduce((sum, currency) => {
-  return sum + currency.cost;
+var totalCost = currencies.reduce((collectedSum, currency) => {
+    return collectedSum + currency.cost;
 }, 0);
 
 console.log("Total cost: ", totalCost);
