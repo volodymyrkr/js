@@ -16,11 +16,11 @@ let currencies = [
 console.log("Currencies:");
 
 currencies.forEach((currency) => {
-  console.log(`- ${currency.shortname} costs ${currency.cost} hrn (${currency.name})`);
+  console.log(`- ${currency.shortname} (${currency.name}) costs ${currency.cost} hrn `);
 });
 
-var totalCost = currencies.reduce((prev, currency) => {
-  return prev + currency.cost;
+var totalCost = currencies.reduce((sum, currency) => {
+  return sum + currency.cost;
 }, 0);
 
 console.log("Total cost: ", totalCost);
