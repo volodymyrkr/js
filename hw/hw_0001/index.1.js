@@ -1,13 +1,13 @@
 let persons = [
-  {name: "Volodymyr", surname: "Kravchenko" , yearsOfBirth: 1981},
-  {name: "Elena", surname: "Kravchenko" , yearsOfBirth: 1988},
-  {name: "Steshka", surname: "Kravchenko", yearsOfBirth: 2013},
-  {name: "Emilie", surname: "Kravchenko", yearsOfBirth: 2015},
-  {name: "Dmytro", surname: "Nedava" , yearsOfBirth: 2002},
-  {name: "Lena", surname: "Nedava" , yearsOfBirth: 1974},
-  {name: "Sergey", surname: "Nedava" , yearsOfBirth: 1974},
-  {name: "Nastya", surname: "Nedava" , yearsOfBirth: 1996},
-  {name: "Nikita", surname: "Nedava" , yearsOfBirth: 2013},
+  {firstName: "Volodymyr", lastName: "Kravchenko" , yearsOfBirth: 1981},
+  {firstName: "Elena", lastName: "Kravchenko" , yearsOfBirth: 1988},
+  {firstName: "Steshka", lastName: "Kravchenko", yearsOfBirth: 2013},
+  {firstName: "Emilie", lastName: "Kravchenko", yearsOfBirth: 2015},
+  {firstName: "Dmytro", lastName: "Nedava" , yearsOfBirth: 2002},
+  {firstName: "Lena", lastName: "Nedava" , yearsOfBirth: 1974},
+  {firstName: "Sergey", lastName: "Nedava" , yearsOfBirth: 1974},
+  {firstName: "Nastya", lastName: "Nedava" , yearsOfBirth: 1996},
+  {firstName: "Nikita", lastName: "Nedava" , yearsOfBirth: 2013},
 ];
 
 var date = new Date();
@@ -16,7 +16,7 @@ var currentYear = date.getFullYear();
 console.log("My relatives:");
 
 persons.forEach((person) => {
-  console.log("-", person.name, person.surname, currentYear - person.yearsOfBirth,);
+  console.log(`- ${person.firstName} ${person.lastName} ${currentYear - person.yearsOfBirth}`);
 });
 
 var totalAmountOfYears = persons.reduce((prev, person) => {
